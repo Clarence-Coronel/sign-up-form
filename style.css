@@ -154,7 +154,7 @@ input{
 input:focus{
     /* border-color: rgb(137, 190, 240); */
     border-color:rgb(55, 136, 91);
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.479);
+    /* box-shadow: 0 0 3px rgba(255, 255, 255, 0.479); */
     outline: none;
 }
 
