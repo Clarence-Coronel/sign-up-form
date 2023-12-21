@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/yamaha.png" type="image/x-icon">
     <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
@@ -20,34 +21,40 @@
         </div>
         <div class="content">
             <div class="content__header">
-                Rev up your passion for Yamaha XSR! Sign up now for exclusive updates, insider access, and the chance to <i>join</i> a community of like-minded riders. <br><br> Your adventure starts here – don't miss out, sign up <i>today</i> and ride the thrill!         
+                Rev up your passion for Yamaha XSR 155! Sign up now for exclusive updates, insider access, and the chance to <i>join</i> a community of like-minded riders. <br><br> Your adventure starts here – don't miss out, sign up <i>today</i> and ride the thrill!         
             </div>
             <div class="content__form">
                 <h2>Ride into the unknown!</h2>
                 <div class="form-wrapper">
                     <div class="input-wrapper">
-                        <label for="firstName">FIRST NAME</label>
+                        <label for="firstName"><span class="asterisk">*</span> FIRST NAME</label>
                         <input type="text" id="firstName" name="first_name">
+                        <span class="error-msg" data-for="firstName"></span>
                     </div>
                     <div class="input-wrapper">
-                        <label for="lastName">LAST NAME</label>
+                        <label for="lastName"><span class="asterisk">*</span> LAST NAME</label>
                         <input type="text" id="lastName" name="last_name">
+                        <span class="error-msg" data-for="lastName"></span>
                     </div>
                     <div class="input-wrapper">
-                        <label for="email">EMAIL</label>
+                        <label for="email"><span class="asterisk">*</span> EMAIL</label>
                         <input type="email" id="email" name="email">
+                        <span class="error-msg" data-for="email"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="phoneNum">PHONE NUMBER</label>
                         <input type="text" id="phoneNum" name="phone_num">
+                        <span class="error-msg" data-for="phoneNum"></span>
                     </div>
                     <div class="input-wrapper">
-                        <label for="password">PASSWORD</label>
+                        <label for="password"><span class="asterisk">*</span> PASSWORD</label>
                         <input type="password" id="password" name="password">
+                        <span class="error-msg" data-for="password"></span>
                     </div>
                     <div class="input-wrapper">
-                        <label for="confirmPass">CONFIRM PASSWORD</label>
+                        <label for="confirmPass"><span class="asterisk">*</span> CONFIRM PASSWORD</label>
                         <input type="password" id="confirmPass" name="confirm_pass">
+                        <span class="error-msg" data-for="confirmPass"></span>
                     </div>
                 </div>
             </div>

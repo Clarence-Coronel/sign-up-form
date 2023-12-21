@@ -12,7 +12,9 @@
     font-size: 16px;
 }
 
-
+.asterisk{
+    color: rgb(202, 69, 69);;
+}
 
 main{
     display: flex;
@@ -64,8 +66,14 @@ main{
 }
 
 .logo-container img{
-    width: 80px
+    width: 80px;
+    transition-duration: 500ms;
 }
+
+.logo-container:hover img{
+    transform: rotate(360deg);
+}
+
 
 /* Content */
 .content{
@@ -127,7 +135,13 @@ main{
     font-weight: 600;
 }
 
-.input-wrapper input{
+.input-wrapper .error-msg{
+    color: rgb(202, 69, 69);
+    font-size: 0.8rem;
+    margin-left: 0.5vw;
+}
+
+input{
     background-color: transparent;
     /* box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.288); */
     border: 2px solid rgba(41, 41, 41, 0.918);
@@ -135,6 +149,23 @@ main{
     border-radius: 5px;
     font-size: 1rem;
     padding: 0 0.5vw;
+}
+
+input:focus{
+    /* border-color: rgb(137, 190, 240); */
+    border-color:rgb(55, 136, 91);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.479);
+    outline: none;
+}
+
+.input-wrapper .empty-input{
+    border-color:rgb(202, 69, 69);
+    outline: none;
+}
+
+input:invalid{
+    border-color:rgb(202, 69, 69);
+    outline: none;
 }
 
 /* Footer */
