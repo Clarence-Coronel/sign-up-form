@@ -19,7 +19,7 @@
                     </div>
             </div>
         </a>
-        <form class="content">
+        <form class="content" method="post" action="">
             <div class="content__header">
                 Rev up your passion for Yamaha XSR 155! Sign up now for exclusive updates, insider access, and the chance to <i>join</i> a community of like-minded riders. <br><br> Your adventure starts here – don't miss out, sign up <i>today</i> and ride the thrill!         
             </div>
@@ -28,32 +28,32 @@
                 <div class="form-wrapper">
                     <div class="input-wrapper">
                         <label for="firstName"><span class="asterisk">*</span> FIRST NAME</label>
-                        <input type="text" id="firstName" name="first_name">
+                        <input required type="text" id="firstName" name="first_name">
                         <span class="error-msg" data-for="firstName"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="lastName"><span class="asterisk">*</span> LAST NAME</label>
-                        <input type="text" id="lastName" name="last_name">
+                        <input required type="text" id="lastName" name="last_name">
                         <span class="error-msg" data-for="lastName"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="email"><span class="asterisk">*</span> EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input required type="email" id="email" name="email" placeholder="ex. you@gmail.com" autocomplete="email">
                         <span class="error-msg" data-for="email"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="phoneNum">PHONE NUMBER</label>
-                        <input type="text" id="phoneNum" name="phone_num">
+                        <input required type="text" id="phoneNum" name="phone_num" pattern="09[0-9]{2}[-\s]?[0-9]{3}[-\s]?[0-9]{4}" placeholder="ex. 0912 345 6789">
                         <span class="error-msg" data-for="phoneNum"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="password"><span class="asterisk">*</span> PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input required type="password" id="password" name="password">
                         <span class="error-msg" data-for="password"></span>
                     </div>
                     <div class="input-wrapper">
                         <label for="confirmPass"><span class="asterisk">*</span> CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPass" name="confirm_pass">
+                        <input required type="password" id="confirmPass" name="confirm_pass">
                         <span class="error-msg" data-for="confirmPass"></span>
                     </div>
                 </div>

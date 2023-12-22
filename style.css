@@ -167,7 +167,7 @@ input:focus{
     outline: none;
 }
 
-input:invalid{
+input:focus:invalid{
     border-color:rgb(202, 69, 69);
     outline: none;
 }
