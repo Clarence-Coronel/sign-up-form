@@ -149,10 +149,10 @@ input{
     background-color: transparent;
     /* box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.288); */
     border: 2px solid rgba(41, 41, 41, 0.918);
-    height: 4vh;
+    height: max(40px, 4vh);
     border-radius: 5px;
     font-size: 1rem;
-    padding: 0 0.5vw;
+    padding: 0 max(0.5vw, 5px);
 }
 
 input:focus{
@@ -209,4 +209,97 @@ input:focus:invalid{
 
 .content__footer a:hover{
     color: rgb(51, 148, 95);
+}
+
+@media screen and (max-width: 1600px) {
+    :root{
+        font-size: 14px;
+    }
+
+    main{
+        flex-flow: column;
+    }
+
+    .yamaha-link{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .logo-container{
+        width: 100%;
+        border-radius: 0;
+        padding: 2vh 3vw;
+        /* justify-content: flex-start; */
+    }
+
+    .logo-container img{
+        /* height: 60px; */
+        width: 40px;
+    }
+
+    .logo-container .logo-text{
+        font-size: 2rem;
+    }
+
+    .splash .logo-container{
+        margin-top: max(2vh, 40px);
+    }
+
+    .yamaha-link:hover .logo-container{
+        cursor: default;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    :root{
+        font-size: 14px;
+    }
+
+    .logo-container .logo-text{
+        font-size: 1.5rem;
+    }
+
+    .content .form-wrapper{
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .form-wrapper .input-wrapper{
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+    
+    .content .content__header{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    .content__footer button{
+        width: 100%;
+    }
+
+    .content__footer .sub{    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vh 1vw;
+    }
+    
 }
