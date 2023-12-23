@@ -179,7 +179,7 @@ input:focus:invalid{
 
 .content__footer button{
     width: max(15vw, 120px);
-    padding: 1.5vh 1vw;
+    padding: 1.5vh 0;
     font-size: 1.2rem;
     background-color: rgb(55, 136, 91);
     /* color: rgb(78, 78, 78); */
