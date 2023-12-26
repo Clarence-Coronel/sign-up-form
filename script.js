@@ -1,4 +1,12 @@
-// let morph;
+let isVisible = true;
+
+document.addEventListener("visibilitychange", function() {
+    if (document.visibilityState === 'hidden') {
+        isVisible = false;
+    } else if (document.visibilityState === 'visible') {
+        isVisible = true;
+    }
+  });  
 
 function validateForm() {
     let pass = document.querySelector("#password").value;
@@ -33,14 +41,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(()=>{
         counter++;
-        if(counter%2 != 0){
-            changeToXSR();
+        if(isVisible){
+            if(counter%2 != 0){
+                changeToXSR();
+            }
+            else{
+                changeToYamaha();
+            }
         }
-        else{
-            changeToYamaha();
-        }
+
+        console.log(isVisible);
     }, 5000)
 });
+
+if ('hidden' in document) {
+    // Page Visibility API is supported
+    document.addEventListener("visibilitychange", function() {
+      // Handle visibility change
+    });
+  } else {
+    // Page Visibility API is not supported
+    console.log("Page Visibility API not supported");
+  }
+ 
+
 
 
 function changeToXSR(){
