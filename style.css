@@ -299,7 +299,7 @@ input:focus:invalid{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1vh 1vw;
+        padding: 1vh 1vw max(1vh, 15px) 1vw;
     }
     
 }
