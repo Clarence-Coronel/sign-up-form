@@ -1,3 +1,3 @@
 # sign-up-form
 
-Project: Sign-up Form from The Odin Project
+Sign-up Form Project tasked by The Odin Project. With focus on input validating with HTML and Javascript. Yamaha XSR 155 Theme.
